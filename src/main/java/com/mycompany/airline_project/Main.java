@@ -63,6 +63,11 @@ public class Main extends javax.swing.JFrame {
         });
 
         jMenuItem1.setText("Add Customer");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setText("Search Customer");
@@ -133,6 +138,9 @@ public class Main extends javax.swing.JFrame {
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
+        AddFlight flight=new AddFlight();
+        Desktop.add(flight);
+        flight.setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
@@ -149,11 +157,18 @@ public class Main extends javax.swing.JFrame {
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
                                        
         // TODO add your handling code here:
-        AddAdmin admin=new AddAdmin(); 
-        this.setVisible(false);
-        Main main=new Main();
-        main.setVisible(true);  // TODO add your handling code here:
+         // TODO add your handling code here
+         AddAdmin admin=new AddAdmin();
+         Desktop.add(admin);
+         admin.setVisible(true);
     }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        AddCustomer customer=new AddCustomer();
+         Desktop.add(customer);
+         customer.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments

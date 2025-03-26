@@ -17,7 +17,7 @@ public class Login_Frame extends javax.swing.JFrame {
      */
     public Login_Frame() {
         initComponents();
-        this.getContentPane().setBackground(Color.blue);
+        this.getContentPane().setBackground(Color.gray);
     }
 
     /**
