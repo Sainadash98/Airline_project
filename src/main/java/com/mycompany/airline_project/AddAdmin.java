@@ -5,6 +5,7 @@
 package com.mycompany.airline_project;
 
 import java.awt.Color;
+import javax.swing.*;
 
 /**
  *
@@ -157,7 +158,19 @@ public class AddAdmin extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = new JFrame("Admin Panel");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setSize(400, 400);
 
+            AddAdmin addAdmin = new AddAdmin();
+            frame.add(addAdmin);
+            addAdmin.setVisible(true);
+
+            frame.setVisible(true);
+        });
+    }
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
@@ -169,7 +182,7 @@ public class AddAdmin extends javax.swing.JInternalFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
